@@ -25,6 +25,7 @@
 		CE72248024E6DA12007BE4B7 /* GenericDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72247F24E6DA12007BE4B7 /* GenericDataSource.swift */; };
 		CE72248324E6E1BB007BE4B7 /* UITableView+Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72248224E6E1BB007BE4B7 /* UITableView+Cells.swift */; };
 		CE72248524E6E22D007BE4B7 /* UITableViewCell+storyboardID.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72248424E6E22D007BE4B7 /* UITableViewCell+storyboardID.swift */; };
+		CE72248724E6E9AF007BE4B7 /* SettingsScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE72248624E6E9AF007BE4B7 /* SettingsScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		CE72247F24E6DA12007BE4B7 /* GenericDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDataSource.swift; sourceTree = "<group>"; };
 		CE72248224E6E1BB007BE4B7 /* UITableView+Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Cells.swift"; sourceTree = "<group>"; };
 		CE72248424E6E22D007BE4B7 /* UITableViewCell+storyboardID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+storyboardID.swift"; sourceTree = "<group>"; };
+		CE72248624E6E9AF007BE4B7 /* SettingsScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				CE72243424E5B859007BE4B7 /* Main.storyboard */,
 				CE72243924E5B85D007BE4B7 /* LaunchScreen.storyboard */,
 				CE72247624E6B800007BE4B7 /* RepositoryScreens.storyboard */,
+				CE72248624E6E9AF007BE4B7 /* SettingsScreen.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE72248724E6E9AF007BE4B7 /* SettingsScreen.storyboard in Resources */,
 				CE72247724E6B800007BE4B7 /* RepositoryScreens.storyboard in Resources */,
 				CE72243B24E5B85D007BE4B7 /* LaunchScreen.storyboard in Resources */,
 				CE72243824E5B85D007BE4B7 /* Assets.xcassets in Resources */,
