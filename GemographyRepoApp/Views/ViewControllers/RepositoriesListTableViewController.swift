@@ -20,34 +20,27 @@ class RepositoriesListTableViewController: UITableViewController {
     
     // MARK: Initializers
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        setupViewUI()
+        initData()
+    }
 
+    // MARK: Data Initializer
+    func initData() {
+        tableView.dataSource = RepositoryDataSource()
+    }
+    
+    // MARK: UI Initializer
+    func setupViewUI() {
+        refreshControl = viewRefreshControl
         // Display Edit button in the navigation bar
-        self.navigationItem.rightBarButtonItem = self.editButtonItem
+        navigationItem.rightBarButtonItem = editButtonItem
+        // to eliminate extra separators below UITableView
+        tableView.tableFooterView = UIView()
     }
-
-    // MARK: - Data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RepositoryTableViewCellID", for: indexPath)
-
-        // Configure the cell...
-        return cell
-    }
-
 
 }
-
-
 
 // MARK: - Handlers
 extension RepositoriesListTableViewController {

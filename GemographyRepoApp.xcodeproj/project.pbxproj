@@ -20,6 +20,7 @@
 		CE72247224E6B580007BE4B7 /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72247124E6B580007BE4B7 /* RepositoryTableViewCell.swift */; };
 		CE72247424E6B6B5007BE4B7 /* RepositoriesListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72247324E6B6B5007BE4B7 /* RepositoriesListTableViewController.swift */; };
 		CE72247724E6B800007BE4B7 /* RepositoryScreens.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE72247624E6B800007BE4B7 /* RepositoryScreens.storyboard */; };
+		CE72247A24E6BEB9007BE4B7 /* RepositoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72247924E6BEB9007BE4B7 /* RepositoryDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		CE72247124E6B580007BE4B7 /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
 		CE72247324E6B6B5007BE4B7 /* RepositoriesListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListTableViewController.swift; sourceTree = "<group>"; };
 		CE72247624E6B800007BE4B7 /* RepositoryScreens.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RepositoryScreens.storyboard; sourceTree = "<group>"; };
+		CE72247924E6BEB9007BE4B7 /* RepositoryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		CE72245E24E5F740007BE4B7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CE72247824E6BE66007BE4B7 /* ViewDataSource */,
 				CE72247524E6B712007BE4B7 /* ViewControllers */,
 				CE72246924E6B36A007BE4B7 /* Components */,
 				CE72245F24E5F74F007BE4B7 /* Storyboards */,
@@ -171,6 +174,14 @@
 				CE72247324E6B6B5007BE4B7 /* RepositoriesListTableViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CE72247824E6BE66007BE4B7 /* ViewDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				CE72247924E6BEB9007BE4B7 /* RepositoryDataSource.swift */,
+			);
+			path = ViewDataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +293,7 @@
 				CE72243124E5B859007BE4B7 /* SceneDelegate.swift in Sources */,
 				CE72247424E6B6B5007BE4B7 /* RepositoriesListTableViewController.swift in Sources */,
 				CE72245D24E5F2E1007BE4B7 /* Owner.swift in Sources */,
+				CE72247A24E6BEB9007BE4B7 /* RepositoryDataSource.swift in Sources */,
 				CE72245C24E5F2E1007BE4B7 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
