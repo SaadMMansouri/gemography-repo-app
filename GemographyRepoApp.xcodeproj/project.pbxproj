@@ -21,6 +21,7 @@
 		CE72247424E6B6B5007BE4B7 /* RepositoriesListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72247324E6B6B5007BE4B7 /* RepositoriesListTableViewController.swift */; };
 		CE72247724E6B800007BE4B7 /* RepositoryScreens.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE72247624E6B800007BE4B7 /* RepositoryScreens.storyboard */; };
 		CE72247A24E6BEB9007BE4B7 /* RepositoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72247924E6BEB9007BE4B7 /* RepositoryDataSource.swift */; };
+		CE72247E24E6C694007BE4B7 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72247D24E6C694007BE4B7 /* Observer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		CE72247324E6B6B5007BE4B7 /* RepositoriesListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListTableViewController.swift; sourceTree = "<group>"; };
 		CE72247624E6B800007BE4B7 /* RepositoryScreens.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RepositoryScreens.storyboard; sourceTree = "<group>"; };
 		CE72247924E6BEB9007BE4B7 /* RepositoryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDataSource.swift; sourceTree = "<group>"; };
+		CE72247D24E6C694007BE4B7 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		CE72242D24E5B859007BE4B7 /* GemographyRepoApp */ = {
 			isa = PBXGroup;
 			children = (
+				CE72247B24E6C65A007BE4B7 /* Helpers */,
 				CE72245E24E5F740007BE4B7 /* Views */,
 				CE72245924E5F2E1007BE4B7 /* Models */,
 				CE72242E24E5B859007BE4B7 /* AppDelegate.swift */,
@@ -182,6 +185,22 @@
 				CE72247924E6BEB9007BE4B7 /* RepositoryDataSource.swift */,
 			);
 			path = ViewDataSource;
+			sourceTree = "<group>";
+		};
+		CE72247B24E6C65A007BE4B7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CE72247C24E6C671007BE4B7 /* Patterns */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CE72247C24E6C671007BE4B7 /* Patterns */ = {
+			isa = PBXGroup;
+			children = (
+				CE72247D24E6C694007BE4B7 /* Observer.swift */,
+			);
+			path = Patterns;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE72247224E6B580007BE4B7 /* RepositoryTableViewCell.swift in Sources */,
+				CE72247E24E6C694007BE4B7 /* Observer.swift in Sources */,
 				CE72246F24E6B4FB007BE4B7 /* CustomRefreshControl.swift in Sources */,
 				CE72243324E5B859007BE4B7 /* ViewController.swift in Sources */,
 				CE72242F24E5B859007BE4B7 /* AppDelegate.swift in Sources */,
