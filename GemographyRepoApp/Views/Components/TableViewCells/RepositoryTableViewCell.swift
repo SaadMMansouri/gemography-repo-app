@@ -20,7 +20,22 @@ class RepositoryTableViewCell: UITableViewCell {
     
     // MARK: Data Proprities
     
+    var content : Repository? = nil {
+        didSet {
+            updateCellContent()
+        }
+    }
+    
     // MARK: Update Content
-    func updateUIContent() {}
+    
+    func updateCellContent() {
+        repoNameLabel.text = content?.name
+        repoDescriptionLabel.text = content?.description
+        repoOwnerNameLabel.text = content?.owner.name
+        numberOfStarsLabel.text = (content?.stars as NSNumber? ?? 0).stringValue
+
+        repoOwnerAvatarImageView.image = UIImage(systemName:"circle.grid.hex.fill")
+
+    }
 
 }

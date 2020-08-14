@@ -8,20 +8,19 @@
 
 import UIKit
 
-class RepositoryDataSource: NSObject, UITableViewDataSource {
+class RepositoryDataSource: GenericDataSource<Repository>, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RepositoryTableViewCellID", for: indexPath)
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCell( with: RepositoryTableViewCell.self )
+        cell.content = data.value[indexPath.row]
         return cell
     }
 }
