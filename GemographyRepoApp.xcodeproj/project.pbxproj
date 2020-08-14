@@ -11,6 +11,10 @@
 		CE217FD524E6F16D008424F3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE217FD424E6F16D008424F3 /* NetworkManager.swift */; };
 		CE217FD724E6F429008424F3 /* Formatter+ISO8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE217FD624E6F429008424F3 /* Formatter+ISO8601.swift */; };
 		CE217FD924E6FA6F008424F3 /* NetworkManagerInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE217FD824E6FA6F008424F3 /* NetworkManagerInjector.swift */; };
+		CE217FDC24E6FC55008424F3 /* HTTPRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE217FDB24E6FC55008424F3 /* HTTPRoutable.swift */; };
+		CE217FDE24E6FEAA008424F3 /* RepositoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE217FDD24E6FEAA008424F3 /* RepositoryRouter.swift */; };
+		CE217FE024E700A1008424F3 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE217FDF24E700A1008424F3 /* AppConstants.swift */; };
+		CE217FE224E70701008424F3 /* Date+toString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE217FE124E70701008424F3 /* Date+toString.swift */; };
 		CE72242F24E5B859007BE4B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72242E24E5B859007BE4B7 /* AppDelegate.swift */; };
 		CE72243124E5B859007BE4B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72243024E5B859007BE4B7 /* SceneDelegate.swift */; };
 		CE72243324E5B859007BE4B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72243224E5B859007BE4B7 /* ViewController.swift */; };
@@ -51,6 +55,10 @@
 		CE217FD424E6F16D008424F3 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		CE217FD624E6F429008424F3 /* Formatter+ISO8601.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Formatter+ISO8601.swift"; sourceTree = "<group>"; };
 		CE217FD824E6FA6F008424F3 /* NetworkManagerInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerInjector.swift; sourceTree = "<group>"; };
+		CE217FDB24E6FC55008424F3 /* HTTPRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRoutable.swift; sourceTree = "<group>"; };
+		CE217FDD24E6FEAA008424F3 /* RepositoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryRouter.swift; sourceTree = "<group>"; };
+		CE217FDF24E700A1008424F3 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		CE217FE124E70701008424F3 /* Date+toString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+toString.swift"; sourceTree = "<group>"; };
 		CE72242B24E5B859007BE4B7 /* GemographyRepoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GemographyRepoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE72242E24E5B859007BE4B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE72243024E5B859007BE4B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +135,15 @@
 			path = NetworkManager;
 			sourceTree = "<group>";
 		};
+		CE217FDA24E6FBD9008424F3 /* HttpRouters */ = {
+			isa = PBXGroup;
+			children = (
+				CE217FDB24E6FC55008424F3 /* HTTPRoutable.swift */,
+				CE217FDD24E6FEAA008424F3 /* RepositoryRouter.swift */,
+			);
+			path = HttpRouters;
+			sourceTree = "<group>";
+		};
 		CE72242224E5B859007BE4B7 = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +191,7 @@
 		CE72245924E5F2E1007BE4B7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CE217FDA24E6FBD9008424F3 /* HttpRouters */,
 				CE217FD324E6F158008424F3 /* NetworkManager */,
 				CE72245A24E5F2E1007BE4B7 /* Repository.swift */,
 				CE72245B24E5F2E1007BE4B7 /* Owner.swift */,
@@ -250,6 +268,7 @@
 			children = (
 				CE72248124E6DE5D007BE4B7 /* Extentions */,
 				CE72247C24E6C671007BE4B7 /* Patterns */,
+				CE217FDF24E700A1008424F3 /* AppConstants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -268,6 +287,7 @@
 				CE72248224E6E1BB007BE4B7 /* UITableView+Cells.swift */,
 				CE72248424E6E22D007BE4B7 /* UITableViewCell+storyboardID.swift */,
 				CE217FD624E6F429008424F3 /* Formatter+ISO8601.swift */,
+				CE217FE124E70701008424F3 /* Date+toString.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -442,15 +462,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE217FE024E700A1008424F3 /* AppConstants.swift in Sources */,
 				CE72247224E6B580007BE4B7 /* RepositoryTableViewCell.swift in Sources */,
 				CE72247E24E6C694007BE4B7 /* Observer.swift in Sources */,
 				CE72248024E6DA12007BE4B7 /* GenericDataSource.swift in Sources */,
 				CE72246F24E6B4FB007BE4B7 /* CustomRefreshControl.swift in Sources */,
+				CE217FE224E70701008424F3 /* Date+toString.swift in Sources */,
 				CE72243324E5B859007BE4B7 /* ViewController.swift in Sources */,
 				CE217FD724E6F429008424F3 /* Formatter+ISO8601.swift in Sources */,
 				CE72248324E6E1BB007BE4B7 /* UITableView+Cells.swift in Sources */,
 				CE72242F24E5B859007BE4B7 /* AppDelegate.swift in Sources */,
 				CE72243124E5B859007BE4B7 /* SceneDelegate.swift in Sources */,
+				CE217FDC24E6FC55008424F3 /* HTTPRoutable.swift in Sources */,
+				CE217FDE24E6FEAA008424F3 /* RepositoryRouter.swift in Sources */,
 				CE72247424E6B6B5007BE4B7 /* RepositoriesListTableViewController.swift in Sources */,
 				CE217FD924E6FA6F008424F3 /* NetworkManagerInjector.swift in Sources */,
 				CE72248524E6E22D007BE4B7 /* UITableViewCell+storyboardID.swift in Sources */,
