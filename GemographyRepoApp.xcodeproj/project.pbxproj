@@ -10,6 +10,7 @@
 		8B547E303B930B2CADD18E55 /* Pods_GemographyRepoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5907ECEE380C273CE2FAF59D /* Pods_GemographyRepoApp.framework */; };
 		CE217FD524E6F16D008424F3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE217FD424E6F16D008424F3 /* NetworkManager.swift */; };
 		CE217FD724E6F429008424F3 /* Formatter+ISO8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE217FD624E6F429008424F3 /* Formatter+ISO8601.swift */; };
+		CE217FD924E6FA6F008424F3 /* NetworkManagerInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE217FD824E6FA6F008424F3 /* NetworkManagerInjector.swift */; };
 		CE72242F24E5B859007BE4B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72242E24E5B859007BE4B7 /* AppDelegate.swift */; };
 		CE72243124E5B859007BE4B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72243024E5B859007BE4B7 /* SceneDelegate.swift */; };
 		CE72243324E5B859007BE4B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72243224E5B859007BE4B7 /* ViewController.swift */; };
@@ -49,6 +50,7 @@
 		C980DF56334D3082E8523274 /* Pods-GemographyRepoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GemographyRepoAppTests.debug.xcconfig"; path = "Target Support Files/Pods-GemographyRepoAppTests/Pods-GemographyRepoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE217FD424E6F16D008424F3 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		CE217FD624E6F429008424F3 /* Formatter+ISO8601.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Formatter+ISO8601.swift"; sourceTree = "<group>"; };
+		CE217FD824E6FA6F008424F3 /* NetworkManagerInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerInjector.swift; sourceTree = "<group>"; };
 		CE72242B24E5B859007BE4B7 /* GemographyRepoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GemographyRepoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE72242E24E5B859007BE4B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE72243024E5B859007BE4B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				CE217FD424E6F16D008424F3 /* NetworkManager.swift */,
+				CE217FD824E6FA6F008424F3 /* NetworkManagerInjector.swift */,
 			);
 			path = NetworkManager;
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 				CE72242F24E5B859007BE4B7 /* AppDelegate.swift in Sources */,
 				CE72243124E5B859007BE4B7 /* SceneDelegate.swift in Sources */,
 				CE72247424E6B6B5007BE4B7 /* RepositoriesListTableViewController.swift in Sources */,
+				CE217FD924E6FA6F008424F3 /* NetworkManagerInjector.swift in Sources */,
 				CE72248524E6E22D007BE4B7 /* UITableViewCell+storyboardID.swift in Sources */,
 				CE217FD524E6F16D008424F3 /* NetworkManager.swift in Sources */,
 				CE72245D24E5F2E1007BE4B7 /* Owner.swift in Sources */,
