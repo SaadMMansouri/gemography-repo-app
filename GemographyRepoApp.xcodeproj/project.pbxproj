@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B547E303B930B2CADD18E55 /* Pods_GemographyRepoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5907ECEE380C273CE2FAF59D /* Pods_GemographyRepoApp.framework */; };
 		CE72242F24E5B859007BE4B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72242E24E5B859007BE4B7 /* AppDelegate.swift */; };
 		CE72243124E5B859007BE4B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72243024E5B859007BE4B7 /* SceneDelegate.swift */; };
 		CE72243324E5B859007BE4B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72243224E5B859007BE4B7 /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 		CE72248324E6E1BB007BE4B7 /* UITableView+Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72248224E6E1BB007BE4B7 /* UITableView+Cells.swift */; };
 		CE72248524E6E22D007BE4B7 /* UITableViewCell+storyboardID.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72248424E6E22D007BE4B7 /* UITableViewCell+storyboardID.swift */; };
 		CE72248724E6E9AF007BE4B7 /* SettingsScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE72248624E6E9AF007BE4B7 /* SettingsScreen.storyboard */; };
+		F101281EEE8018B704A9D798 /* Pods_GemographyRepoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8D95B7B158A968A01CBCA7 /* Pods_GemographyRepoAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3DEA5453B2CF95FF35A7F299 /* Pods-GemographyRepoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GemographyRepoApp.debug.xcconfig"; path = "Target Support Files/Pods-GemographyRepoApp/Pods-GemographyRepoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5907ECEE380C273CE2FAF59D /* Pods_GemographyRepoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GemographyRepoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8D95B7B158A968A01CBCA7 /* Pods_GemographyRepoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GemographyRepoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C980DF56334D3082E8523274 /* Pods-GemographyRepoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GemographyRepoAppTests.debug.xcconfig"; path = "Target Support Files/Pods-GemographyRepoAppTests/Pods-GemographyRepoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE72242B24E5B859007BE4B7 /* GemographyRepoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GemographyRepoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE72242E24E5B859007BE4B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE72243024E5B859007BE4B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +68,8 @@
 		CE72248224E6E1BB007BE4B7 /* UITableView+Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Cells.swift"; sourceTree = "<group>"; };
 		CE72248424E6E22D007BE4B7 /* UITableViewCell+storyboardID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+storyboardID.swift"; sourceTree = "<group>"; };
 		CE72248624E6E9AF007BE4B7 /* SettingsScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsScreen.storyboard; sourceTree = "<group>"; };
+		D21D43162AE7B17FE62B261F /* Pods-GemographyRepoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GemographyRepoApp.release.xcconfig"; path = "Target Support Files/Pods-GemographyRepoApp/Pods-GemographyRepoApp.release.xcconfig"; sourceTree = "<group>"; };
+		D21E80423D3DDD4822F4E926 /* Pods-GemographyRepoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GemographyRepoAppTests.release.xcconfig"; path = "Target Support Files/Pods-GemographyRepoAppTests/Pods-GemographyRepoAppTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B547E303B930B2CADD18E55 /* Pods_GemographyRepoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,18 +85,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F101281EEE8018B704A9D798 /* Pods_GemographyRepoAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		86053B365A04E12753195A6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5907ECEE380C273CE2FAF59D /* Pods_GemographyRepoApp.framework */,
+				BF8D95B7B158A968A01CBCA7 /* Pods_GemographyRepoAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9637A37B172AF2AFFED09C80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DEA5453B2CF95FF35A7F299 /* Pods-GemographyRepoApp.debug.xcconfig */,
+				D21D43162AE7B17FE62B261F /* Pods-GemographyRepoApp.release.xcconfig */,
+				C980DF56334D3082E8523274 /* Pods-GemographyRepoAppTests.debug.xcconfig */,
+				D21E80423D3DDD4822F4E926 /* Pods-GemographyRepoAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CE72242224E5B859007BE4B7 = {
 			isa = PBXGroup;
 			children = (
 				CE72242D24E5B859007BE4B7 /* GemographyRepoApp */,
 				CE72244424E5B85D007BE4B7 /* GemographyRepoAppTests */,
 				CE72242C24E5B859007BE4B7 /* Products */,
+				9637A37B172AF2AFFED09C80 /* Pods */,
+				86053B365A04E12753195A6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,9 +169,9 @@
 		CE72245E24E5F740007BE4B7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CE72246924E6B36A007BE4B7 /* Components */,
 				CE72247824E6BE66007BE4B7 /* ViewDataSource */,
 				CE72247524E6B712007BE4B7 /* ViewControllers */,
-				CE72246924E6B36A007BE4B7 /* Components */,
 				CE72245F24E5F74F007BE4B7 /* Storyboards */,
 			);
 			path = Views;
@@ -230,9 +263,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE72244A24E5B85D007BE4B7 /* Build configuration list for PBXNativeTarget "GemographyRepoApp" */;
 			buildPhases = (
+				429C56D2515A00A50EB4CD8D /* [CP] Check Pods Manifest.lock */,
 				CE72242724E5B859007BE4B7 /* Sources */,
 				CE72242824E5B859007BE4B7 /* Frameworks */,
 				CE72242924E5B859007BE4B7 /* Resources */,
+				ED10DE68452229FA68DB28A4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,6 +282,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE72244D24E5B85D007BE4B7 /* Build configuration list for PBXNativeTarget "GemographyRepoAppTests" */;
 			buildPhases = (
+				B6B6ECC4C06AC7CA196C990E /* [CP] Check Pods Manifest.lock */,
 				CE72243D24E5B85D007BE4B7 /* Sources */,
 				CE72243E24E5B85D007BE4B7 /* Frameworks */,
 				CE72243F24E5B85D007BE4B7 /* Resources */,
@@ -320,6 +356,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		429C56D2515A00A50EB4CD8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GemographyRepoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6B6ECC4C06AC7CA196C990E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GemographyRepoAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED10DE68452229FA68DB28A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GemographyRepoApp/Pods-GemographyRepoApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GemographyRepoApp/Pods-GemographyRepoApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GemographyRepoApp/Pods-GemographyRepoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE72242724E5B859007BE4B7 /* Sources */ = {
@@ -496,6 +596,7 @@
 		};
 		CE72244B24E5B85D007BE4B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DEA5453B2CF95FF35A7F299 /* Pods-GemographyRepoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -514,6 +615,7 @@
 		};
 		CE72244C24E5B85D007BE4B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D21D43162AE7B17FE62B261F /* Pods-GemographyRepoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +634,7 @@
 		};
 		CE72244E24E5B85D007BE4B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C980DF56334D3082E8523274 /* Pods-GemographyRepoAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -554,6 +657,7 @@
 		};
 		CE72244F24E5B85D007BE4B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D21E80423D3DDD4822F4E926 /* Pods-GemographyRepoAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
