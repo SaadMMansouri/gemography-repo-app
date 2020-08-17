@@ -5,7 +5,7 @@
 //  Created by MANSOURI Saad on 8/14/20.
 //  Copyright © 2020 MANSOURI Saad. All rights reserved.
 //
-
+import Foundation
 import Alamofire
 
 protocol HTTPRoutable : URLRequestConvertible {
@@ -22,7 +22,9 @@ extension HTTPRoutable {
     func asURLRequest() throws -> URLRequest {
         let url = try baseURL.asURL()
         var request = try URLRequest(
-            url: url.appendingPathComponent(path),
+            url: url.appendingPathComponent(path)
+                .absoluteString
+                .removingPercentEncoding!,
             method: method,
             headers: headers)
         request.timeoutInterval = TimeInterval(10 * 1000)

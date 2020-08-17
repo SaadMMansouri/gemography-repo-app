@@ -23,6 +23,7 @@ class RepositoryTableViewCell: UITableViewCell {
     var content : Repository? = nil {
         didSet {
             updateCellContent()
+            updateCellStyle()
         }
     }
     
@@ -32,10 +33,14 @@ class RepositoryTableViewCell: UITableViewCell {
         repoNameLabel.text = content?.name
         repoDescriptionLabel.text = content?.description
         repoOwnerNameLabel.text = content?.owner.name
-        numberOfStarsLabel.text = (content?.stars as NSNumber? ?? 0).stringValue
-
-        repoOwnerAvatarImageView.image = UIImage(systemName:"circle.grid.hex.fill")
-
+        numberOfStarsLabel.text = content?.stars.dividedByK()
+        
+        guard let imageURL = URL(string: content?.owner.avatar ?? "") else { return }
+        repoOwnerAvatarImageView.load(url: imageURL)
+    }
+    
+    func updateCellStyle() {
+        repoOwnerAvatarImageView.makeCornersRounded()
     }
 
 }

@@ -30,55 +30,26 @@ final class NetworkManager {
 // MARK: - Functions -
 
 extension NetworkManager {
-    func getData<T: Codable>( request: Alamofire.URLRequestConvertible ) -> Promise<T> {
-        
+    
+    func executeQuery(request: Alamofire.URLRequestConvertible ) -> Promise<[String : Any]?> {
         return Promise { resolver in
-            session.request(request).responseData(completionHandler: {response in
-                debugPrint("loading from api...")
+            session.request(request).validate().responseJSON { (response) in
                 
-                switch response.result{
-                case .success(let value):
-                    if let code = response.response?.statusCode{
-                        switch code {
-                        case 200...299:
-                            do {
-                                // configurate json decoder
-                                let decoder = JSONDecoder()
-                                decoder.dateDecodingStrategy = .formatted(Formatter.iso8601)
-                                
-                                // start decoding the received data
-                                let data = try decoder.decode(T.self, from: value)
-                                
-                                // return decoded data
-                                resolver.fulfill(data)
-                                
-                            } catch let error {
-                                
-                                // convert response value to string to display it in console
-                                let receivedResponse = String(data: value, encoding: .utf8)
-                                debugPrint( receivedResponse ?? "Nothing received")
-                                
-                                // return decoding error object
-                                resolver.reject(error)
-                            }
-                            
-                        default:
-                            
-                            // create a custom error base on response code and description
-                            let error = NSError(domain: response.debugDescription,
-                                code: code, userInfo: response.response?.allHeaderFields as? [String: Any])
-                            
-                            // return the custom error object
-                            resolver.reject(error)
-                        }
+                do{
+                    guard let data = response.data else {
+                        resolver.reject(NSError(domain: "Error", code: 0, userInfo: nil) )
+                        return
                     }
-                case .failure(let error):
-                    // return response error object
-                    resolver.reject(error)
+                    let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+                    resolver.fulfill(json)
+                } catch _ {
+                    resolver.reject(NSError(domain: "jsonConversionFailure", code: 0, userInfo: nil))
                 }
-            })
+
+            }
         }
     }
+    
 }
 
 

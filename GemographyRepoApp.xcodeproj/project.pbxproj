@@ -15,6 +15,15 @@
 		CE217FDE24E6FEAA008424F3 /* RepositoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE217FDD24E6FEAA008424F3 /* RepositoryRouter.swift */; };
 		CE217FE024E700A1008424F3 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE217FDF24E700A1008424F3 /* AppConstants.swift */; };
 		CE217FE224E70701008424F3 /* Date+toString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE217FE124E70701008424F3 /* Date+toString.swift */; };
+		CE217FE924E77F32008424F3 /* RepositoriesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE217FE824E77F32008424F3 /* RepositoriesListViewModel.swift */; };
+		CE217FEB24E7870D008424F3 /* ViewModelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE217FEA24E7870D008424F3 /* ViewModelable.swift */; };
+		CE217FED24E7878D008424F3 /* ViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE217FEC24E7878D008424F3 /* ViewModelDelegate.swift */; };
+		CE6E7DD524E78B9800BF55CD /* RepositoriesListTableViewController+ViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E7DD424E78B9800BF55CD /* RepositoriesListTableViewController+ViewModelDelegate.swift */; };
+		CE6E7DD724E78D8800BF55CD /* UIViewController+ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E7DD624E78D8800BF55CD /* UIViewController+ActivityIndicator.swift */; };
+		CE6E7DDA24EAA01C00BF55CD /* RepositoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E7DD924EAA01C00BF55CD /* RepositoryService.swift */; };
+		CE6E7DDC24EAE79600BF55CD /* UIImageView+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E7DDB24EAE79600BF55CD /* UIImageView+URL.swift */; };
+		CE6E7DDE24EAE97500BF55CD /* UIView+Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E7DDD24EAE97500BF55CD /* UIView+Round.swift */; };
+		CE6E7DE024EAEBFE00BF55CD /* Int+DividedByK.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E7DDF24EAEBFE00BF55CD /* Int+DividedByK.swift */; };
 		CE72242F24E5B859007BE4B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72242E24E5B859007BE4B7 /* AppDelegate.swift */; };
 		CE72243124E5B859007BE4B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72243024E5B859007BE4B7 /* SceneDelegate.swift */; };
 		CE72243324E5B859007BE4B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72243224E5B859007BE4B7 /* ViewController.swift */; };
@@ -59,6 +68,15 @@
 		CE217FDD24E6FEAA008424F3 /* RepositoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryRouter.swift; sourceTree = "<group>"; };
 		CE217FDF24E700A1008424F3 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		CE217FE124E70701008424F3 /* Date+toString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+toString.swift"; sourceTree = "<group>"; };
+		CE217FE824E77F32008424F3 /* RepositoriesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListViewModel.swift; sourceTree = "<group>"; };
+		CE217FEA24E7870D008424F3 /* ViewModelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelable.swift; sourceTree = "<group>"; };
+		CE217FEC24E7878D008424F3 /* ViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelDelegate.swift; sourceTree = "<group>"; };
+		CE6E7DD424E78B9800BF55CD /* RepositoriesListTableViewController+ViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RepositoriesListTableViewController+ViewModelDelegate.swift"; sourceTree = "<group>"; };
+		CE6E7DD624E78D8800BF55CD /* UIViewController+ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ActivityIndicator.swift"; sourceTree = "<group>"; };
+		CE6E7DD924EAA01C00BF55CD /* RepositoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryService.swift; sourceTree = "<group>"; };
+		CE6E7DDB24EAE79600BF55CD /* UIImageView+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+URL.swift"; sourceTree = "<group>"; };
+		CE6E7DDD24EAE97500BF55CD /* UIView+Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Round.swift"; sourceTree = "<group>"; };
+		CE6E7DDF24EAEBFE00BF55CD /* Int+DividedByK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+DividedByK.swift"; sourceTree = "<group>"; };
 		CE72242B24E5B859007BE4B7 /* GemographyRepoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GemographyRepoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE72242E24E5B859007BE4B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE72243024E5B859007BE4B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +162,33 @@
 			path = HttpRouters;
 			sourceTree = "<group>";
 		};
+		CE217FE424E77C27008424F3 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				CE72245A24E5F2E1007BE4B7 /* Repository.swift */,
+				CE72245B24E5F2E1007BE4B7 /* Owner.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		CE217FE724E77EFF008424F3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CE217FE824E77F32008424F3 /* RepositoriesListViewModel.swift */,
+				CE217FEA24E7870D008424F3 /* ViewModelable.swift */,
+				CE217FEC24E7878D008424F3 /* ViewModelDelegate.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CE6E7DD824EAA00400BF55CD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE6E7DD924EAA01C00BF55CD /* RepositoryService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		CE72242224E5B859007BE4B7 = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +212,7 @@
 		CE72242D24E5B859007BE4B7 /* GemographyRepoApp */ = {
 			isa = PBXGroup;
 			children = (
+				CE217FE724E77EFF008424F3 /* ViewModels */,
 				CE72247B24E6C65A007BE4B7 /* Helpers */,
 				CE72245E24E5F740007BE4B7 /* Views */,
 				CE72245924E5F2E1007BE4B7 /* Models */,
@@ -191,10 +237,10 @@
 		CE72245924E5F2E1007BE4B7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CE6E7DD824EAA00400BF55CD /* Services */,
+				CE217FE424E77C27008424F3 /* Structs */,
 				CE217FDA24E6FBD9008424F3 /* HttpRouters */,
 				CE217FD324E6F158008424F3 /* NetworkManager */,
-				CE72245A24E5F2E1007BE4B7 /* Repository.swift */,
-				CE72245B24E5F2E1007BE4B7 /* Owner.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -250,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				CE72247324E6B6B5007BE4B7 /* RepositoriesListTableViewController.swift */,
+				CE6E7DD424E78B9800BF55CD /* RepositoriesListTableViewController+ViewModelDelegate.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -288,6 +335,10 @@
 				CE72248424E6E22D007BE4B7 /* UITableViewCell+storyboardID.swift */,
 				CE217FD624E6F429008424F3 /* Formatter+ISO8601.swift */,
 				CE217FE124E70701008424F3 /* Date+toString.swift */,
+				CE6E7DD624E78D8800BF55CD /* UIViewController+ActivityIndicator.swift */,
+				CE6E7DDB24EAE79600BF55CD /* UIImageView+URL.swift */,
+				CE6E7DDD24EAE97500BF55CD /* UIView+Round.swift */,
+				CE6E7DDF24EAEBFE00BF55CD /* Int+DividedByK.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -463,24 +514,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE217FE024E700A1008424F3 /* AppConstants.swift in Sources */,
+				CE6E7DDA24EAA01C00BF55CD /* RepositoryService.swift in Sources */,
 				CE72247224E6B580007BE4B7 /* RepositoryTableViewCell.swift in Sources */,
 				CE72247E24E6C694007BE4B7 /* Observer.swift in Sources */,
 				CE72248024E6DA12007BE4B7 /* GenericDataSource.swift in Sources */,
 				CE72246F24E6B4FB007BE4B7 /* CustomRefreshControl.swift in Sources */,
 				CE217FE224E70701008424F3 /* Date+toString.swift in Sources */,
+				CE217FE924E77F32008424F3 /* RepositoriesListViewModel.swift in Sources */,
 				CE72243324E5B859007BE4B7 /* ViewController.swift in Sources */,
 				CE217FD724E6F429008424F3 /* Formatter+ISO8601.swift in Sources */,
 				CE72248324E6E1BB007BE4B7 /* UITableView+Cells.swift in Sources */,
+				CE217FEB24E7870D008424F3 /* ViewModelable.swift in Sources */,
+				CE6E7DD524E78B9800BF55CD /* RepositoriesListTableViewController+ViewModelDelegate.swift in Sources */,
 				CE72242F24E5B859007BE4B7 /* AppDelegate.swift in Sources */,
 				CE72243124E5B859007BE4B7 /* SceneDelegate.swift in Sources */,
 				CE217FDC24E6FC55008424F3 /* HTTPRoutable.swift in Sources */,
 				CE217FDE24E6FEAA008424F3 /* RepositoryRouter.swift in Sources */,
 				CE72247424E6B6B5007BE4B7 /* RepositoriesListTableViewController.swift in Sources */,
+				CE217FED24E7878D008424F3 /* ViewModelDelegate.swift in Sources */,
 				CE217FD924E6FA6F008424F3 /* NetworkManagerInjector.swift in Sources */,
 				CE72248524E6E22D007BE4B7 /* UITableViewCell+storyboardID.swift in Sources */,
+				CE6E7DD724E78D8800BF55CD /* UIViewController+ActivityIndicator.swift in Sources */,
 				CE217FD524E6F16D008424F3 /* NetworkManager.swift in Sources */,
+				CE6E7DDC24EAE79600BF55CD /* UIImageView+URL.swift in Sources */,
 				CE72245D24E5F2E1007BE4B7 /* Owner.swift in Sources */,
+				CE6E7DDE24EAE97500BF55CD /* UIView+Round.swift in Sources */,
 				CE72247A24E6BEB9007BE4B7 /* RepositoryDataSource.swift in Sources */,
+				CE6E7DE024EAEBFE00BF55CD /* Int+DividedByK.swift in Sources */,
 				CE72245C24E5F2E1007BE4B7 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

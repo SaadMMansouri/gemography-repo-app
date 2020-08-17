@@ -6,4 +6,17 @@
 //  Copyright © 2020 MANSOURI Saad. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+// MARK: - ViewModelDelegate
+
+extension RepositoriesListTableViewController : ViewModelDelegate {
+    func didStartFetchingData() {
+        showSpinner()
+    }
+
+    func didFinishFetchingData() {
+        tableView.reloadData()
+        hideSpinner()
+    }
+}

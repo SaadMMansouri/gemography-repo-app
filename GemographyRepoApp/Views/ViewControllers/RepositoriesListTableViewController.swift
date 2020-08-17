@@ -18,6 +18,10 @@ class RepositoriesListTableViewController: UITableViewController {
     
     // MARK: Data Propreties
     
+    lazy var viewModel: RepositoriesListViewModel = {
+        return RepositoriesListViewModel(delegate: self)
+    }()
+    
     // MARK: Initializers
 
     override func viewWillAppear(_ animated: Bool) {
@@ -28,14 +32,13 @@ class RepositoriesListTableViewController: UITableViewController {
 
     // MARK: Data Initializer
     func initData() {
-        tableView.dataSource = RepositoryDataSource()
+        tableView.dataSource = viewModel.dataSource as? RepositoryDataSource
+        viewModel.fetchData()
     }
     
     // MARK: UI Initializer
     func setupViewUI() {
         refreshControl = viewRefreshControl
-        // Display Edit button in the navigation bar
-        navigationItem.rightBarButtonItem = editButtonItem
         // to eliminate extra separators below UITableView
         tableView.tableFooterView = UIView()
     }
@@ -46,7 +49,7 @@ class RepositoriesListTableViewController: UITableViewController {
 extension RepositoriesListTableViewController {
     
     @objc func refreshData() {
-        tableView.reloadData()
+        viewModel.fetchData()
     }
     
 }

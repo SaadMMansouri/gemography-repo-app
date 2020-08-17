@@ -21,19 +21,17 @@ struct Repository : Codable {
     // MARK: Initialization
 
     init?(json: [String: Any]) {
-        guard let idJSON            = json["id"] as? Int,
-            let nameJSON            = json["name"] as? String,
-            let descriptionJSON     = json["description"] as? String,
-            let starsJSON           = json["stargazers_count"] as? Int,
-            let ownerJSON           = json["owner"] as? Owner
+        guard let idJSON        = json["id"] as? Int,
+            let nameJSON        = json["name"] as? String,
+            let ownerJSON       = Owner(json: json["owner"] as! [String : Any])
             else {
                 return nil
         }
 
         self.id                     = idJSON
         self.name                   = nameJSON
-        self.description            = descriptionJSON
-        self.stars                  = starsJSON
+        self.description            = json["description"] as? String ?? "No description"
+        self.stars                  = json["stargazers_count"] as? Int ?? 0
         self.owner                  = ownerJSON
     }
 }

@@ -25,21 +25,20 @@ class RepositoriesListViewModel: ViewModelable {
     }
 }
 
-extension RepositoriesListViewModel : NetworkManagerInjector {
+extension RepositoriesListViewModel : RepositoryService {
     
     // fetch all Repository
-    func fetchData(){
+    func fetchData( pageNumber : Int = 0){
         if mustShowIndicator() {
             viewModelDelegate.didStartFetchingData?()
         }
-        networkManager.getData(request: RepositoryRouter.getLast30Days()).done {
+        findAll(page: pageNumber ).done {
             ( repositories : [Repository] ) in
             self.dataSource.data.value = repositories
-            self.viewModelDelegate.didFinishFetchingData?()
         }.catch { (error) in
             print("Fetching failed! ", error)
         }.finally {
-            
+            self.viewModelDelegate.didFinishFetchingData?()
         }
     }
 
