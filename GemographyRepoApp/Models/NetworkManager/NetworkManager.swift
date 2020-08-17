@@ -34,16 +34,20 @@ extension NetworkManager {
     func executeQuery(request: Alamofire.URLRequestConvertible ) -> Promise<[String : Any]?> {
         return Promise { resolver in
             session.request(request).validate().responseJSON { (response) in
-                
-                do{
-                    guard let data = response.data else {
-                        resolver.reject(NSError(domain: "Error", code: 0, userInfo: nil) )
+                guard let data = response.data else {
+                    guard let afError = response.error else {
+                        resolver.reject(APIError.noDataReceived)
                         return
                     }
+                    resolver.reject(APIError.requestFailed(afError))
+                    return
+                }
+                
+                do{
                     let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
                     resolver.fulfill(json)
                 } catch _ {
-                    resolver.reject(NSError(domain: "jsonConversionFailure", code: 0, userInfo: nil))
+                    resolver.reject(APIError.jsonConversionFailure)
                 }
 
             }

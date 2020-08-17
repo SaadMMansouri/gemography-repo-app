@@ -24,6 +24,7 @@
 		CE6E7DDC24EAE79600BF55CD /* UIImageView+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E7DDB24EAE79600BF55CD /* UIImageView+URL.swift */; };
 		CE6E7DDE24EAE97500BF55CD /* UIView+Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E7DDD24EAE97500BF55CD /* UIView+Round.swift */; };
 		CE6E7DE024EAEBFE00BF55CD /* Int+DividedByK.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E7DDF24EAEBFE00BF55CD /* Int+DividedByK.swift */; };
+		CE6E7DE224EAF8DF00BF55CD /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E7DE124EAF8DF00BF55CD /* APIError.swift */; };
 		CE72242F24E5B859007BE4B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72242E24E5B859007BE4B7 /* AppDelegate.swift */; };
 		CE72243124E5B859007BE4B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72243024E5B859007BE4B7 /* SceneDelegate.swift */; };
 		CE72243324E5B859007BE4B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72243224E5B859007BE4B7 /* ViewController.swift */; };
@@ -77,6 +78,7 @@
 		CE6E7DDB24EAE79600BF55CD /* UIImageView+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+URL.swift"; sourceTree = "<group>"; };
 		CE6E7DDD24EAE97500BF55CD /* UIView+Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Round.swift"; sourceTree = "<group>"; };
 		CE6E7DDF24EAEBFE00BF55CD /* Int+DividedByK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+DividedByK.swift"; sourceTree = "<group>"; };
+		CE6E7DE124EAF8DF00BF55CD /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		CE72242B24E5B859007BE4B7 /* GemographyRepoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GemographyRepoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE72242E24E5B859007BE4B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE72243024E5B859007BE4B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			children = (
 				CE217FD424E6F16D008424F3 /* NetworkManager.swift */,
 				CE217FD824E6FA6F008424F3 /* NetworkManagerInjector.swift */,
+				CE6E7DE124EAF8DF00BF55CD /* APIError.swift */,
 			);
 			path = NetworkManager;
 			sourceTree = "<group>";
@@ -536,6 +539,7 @@
 				CE72248524E6E22D007BE4B7 /* UITableViewCell+storyboardID.swift in Sources */,
 				CE6E7DD724E78D8800BF55CD /* UIViewController+ActivityIndicator.swift in Sources */,
 				CE217FD524E6F16D008424F3 /* NetworkManager.swift in Sources */,
+				CE6E7DE224EAF8DF00BF55CD /* APIError.swift in Sources */,
 				CE6E7DDC24EAE79600BF55CD /* UIImageView+URL.swift in Sources */,
 				CE72245D24E5F2E1007BE4B7 /* Owner.swift in Sources */,
 				CE6E7DDE24EAE97500BF55CD /* UIView+Round.swift in Sources */,
