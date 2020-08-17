@@ -27,7 +27,6 @@
 		CE6E7DE224EAF8DF00BF55CD /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E7DE124EAF8DF00BF55CD /* APIError.swift */; };
 		CE72242F24E5B859007BE4B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72242E24E5B859007BE4B7 /* AppDelegate.swift */; };
 		CE72243124E5B859007BE4B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72243024E5B859007BE4B7 /* SceneDelegate.swift */; };
-		CE72243324E5B859007BE4B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72243224E5B859007BE4B7 /* ViewController.swift */; };
 		CE72243624E5B859007BE4B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE72243424E5B859007BE4B7 /* Main.storyboard */; };
 		CE72243824E5B85D007BE4B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE72243724E5B85D007BE4B7 /* Assets.xcassets */; };
 		CE72243B24E5B85D007BE4B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE72243924E5B85D007BE4B7 /* LaunchScreen.storyboard */; };
@@ -82,7 +81,6 @@
 		CE72242B24E5B859007BE4B7 /* GemographyRepoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GemographyRepoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE72242E24E5B859007BE4B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE72243024E5B859007BE4B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE72243224E5B859007BE4B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE72243524E5B859007BE4B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE72243724E5B85D007BE4B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE72243A24E5B85D007BE4B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -221,7 +219,6 @@
 				CE72245924E5F2E1007BE4B7 /* Models */,
 				CE72242E24E5B859007BE4B7 /* AppDelegate.swift */,
 				CE72243024E5B859007BE4B7 /* SceneDelegate.swift */,
-				CE72243224E5B859007BE4B7 /* ViewController.swift */,
 				CE72243724E5B85D007BE4B7 /* Assets.xcassets */,
 				CE72243C24E5B85D007BE4B7 /* Info.plist */,
 			);
@@ -524,7 +521,6 @@
 				CE72246F24E6B4FB007BE4B7 /* CustomRefreshControl.swift in Sources */,
 				CE217FE224E70701008424F3 /* Date+toString.swift in Sources */,
 				CE217FE924E77F32008424F3 /* RepositoriesListViewModel.swift in Sources */,
-				CE72243324E5B859007BE4B7 /* ViewController.swift in Sources */,
 				CE217FD724E6F429008424F3 /* Formatter+ISO8601.swift in Sources */,
 				CE72248324E6E1BB007BE4B7 /* UITableView+Cells.swift in Sources */,
 				CE217FEB24E7870D008424F3 /* ViewModelable.swift in Sources */,

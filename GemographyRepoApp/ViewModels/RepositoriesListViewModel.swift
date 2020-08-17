@@ -29,12 +29,13 @@ extension RepositoriesListViewModel : RepositoryService {
     
     // fetch all Repository
     func fetchData( pageNumber : Int = 0){
+        print(pageNumber)
         if mustShowIndicator() {
             viewModelDelegate.didStartFetchingData?()
         }
         findAll(page: pageNumber ).done {
             ( repositories : [Repository] ) in
-            self.dataSource.data.value = repositories
+            self.dataSource.data.value.append(contentsOf: repositories)
         }.catch { (error) in
             print("Fetching failed! ", error)
         }.finally {

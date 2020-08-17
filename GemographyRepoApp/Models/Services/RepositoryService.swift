@@ -19,7 +19,7 @@ extension RepositoryService {
     /// load all repositories page by page from api
     func findAll( page : Int) -> Promise<[Repository]> {
         return Promise { resolver in
-            networkManager.executeQuery(request: RepositoryRouter.getLast30Days())
+            networkManager.executeQuery(request: RepositoryRouter.getLast30Days( page: page ))
                 .done{ ( jsonResponse : [String : Any]? ) in
                     var repositories : [Repository] = []
                     let items = jsonResponse?["items"] as! [[String : Any]]
